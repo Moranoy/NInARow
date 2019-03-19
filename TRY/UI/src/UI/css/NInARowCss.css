@@ -1,0 +1,53 @@
+.root {
+    -fx-background-color: #ffc0cb;
+}
+
+.label {
+    -fx-font-size: 12px;
+    -fx-font-style: bold;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+}
+
+.button {
+    -fx-text-fill: black;
+    -fx-font-style: oblique;
+    -fx-font-size: 12px;
+    -fx-background-color: linear-gradient(#c78517, #e7c28e);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+.button:hover{
+    -fx-border-color: white;
+}
+
+#mBtnLoadFile{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+}
+
+#mBtnStartGame{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+}
+
+.combo-box{
+    -fx-text-fill: white;
+    -fx-font-style: oblique;
+    -fx-font-size: 12px;
+    -fx-border-style: dashed;
+    -fx-background-color: linear-gradient(#008307, #9ce7a0);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+.combo-box:hover{
+    -fx-border-color: white;
+}
+
+#mComboBoxTheame{
+    -fx-text-fill: white;
+}
+
+#mProgressTextLabel{
+    -fx-text-fill: white;
+}
+

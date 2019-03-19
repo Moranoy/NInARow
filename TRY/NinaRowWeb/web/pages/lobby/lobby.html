@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>DeaNoy Lobby</title>
+    <!-- <link rel="stylesheet" href="lobby.css"> -->
+    <link rel="stylesheet" href="lobby.css">
+    <link rel="stylesheet" href="lobby_tables.css">
+
+    <script src="../../common/jquery-2.0.3.min.js"></script>
+    <script src="../../common/context-path-helper.js"></script>
+    <script src="lobby.js"></script>
+    <script src="games_table.js"></script>
+
+</head>
+
+<body>
+<div id="lobbyContainer" style="height: 100%">
+    <table  class="generalTable" style="height: 100%; width: 100%;">
+        <tr id ="Title"><td></td><td><img  style="height: 45%" src="../../images/LobbyTitle.png" alt="DeaNoy Lobby"></td><td></td></tr>
+        <tr id="lobbyConfigs"><td><a href="../logout" class="btn btn-info btn-lg active" role="button">Logout</a></td>
+            <td><form id="uploadForm" action="/upload" enctype="multipart/form-data" method="POST">
+                <input type="file" name="gamefile" value="Load File Game"><br>
+                <input type="Submit" class="btn" value="Submit"><br>
+            </form></td>
+        </tr>
+        <tr  id="centered">
+            <td><div id="onlineUsers" class = "right table">
+                <h2>Online Users</h2>
+                    <table cellpadding="0" cellspacing="0" border="0">
+                        <tbody id="users-names" style="font-size: 15px">
+                        </tbody>
+                    </table>
+            </div></td>
+            <td>
+                <div id="existingGamesTable" class = "left table">
+                    <h2>Existing Games</h2>
+                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                        <thead class="tbl-header"><tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Players</th>
+                            <th scope="col">Type</th>
+                            <th scope="col">Board Size</th>
+                            <th scope="col">Target</th>
+                            <th scope="col">Uploader</th>
+                            <th scope="col"></th>
+                        </tr></thead>
+                        <tbody id="game-details" class="tbl-content">
+                        </tbody>
+                    </table>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+</body>
+
+</html>

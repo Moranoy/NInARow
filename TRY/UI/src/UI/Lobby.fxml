@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+
+<ScrollPane fx:id="muiScrollPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.Controllers.LobbyController">
+   <content>
+      <BorderPane fx:id="muiBorderPane" prefHeight="399.0" prefWidth="597.0">
+         <top>
+            <HBox fx:id="muiGameOptionsTopTab" prefHeight="56.0" prefWidth="597.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="muiLogoutBtn" mnemonicParsing="false" text="Logout">
+                     <HBox.margin>
+                        <Insets left="8.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </top>
+         <left>
+            <VBox fx:id="muiOnlinePlayers" alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="8.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Text fx:id="muiOnlinePlayerTitle" strokeType="OUTSIDE" strokeWidth="0.0" text="Online Players" textAlignment="CENTER" />
+               </children>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </VBox>
+         </left>
+         <center>
+            <FlowPane fx:id="muiGameDetailsFlowPane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </content>
+</ScrollPane>

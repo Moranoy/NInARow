@@ -1,0 +1,4 @@
+TRY/*.idea/
+*.iml
+out
+*workspace.xml

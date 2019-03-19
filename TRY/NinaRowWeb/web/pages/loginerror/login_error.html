@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>DeaNoy N-IN-A-ROW Game</title>
+    <link rel="stylesheet" href="index.css">
+<!--    <link rel="stylesheet" href="login_error.css">-->
+    <div id ="Title">
+        <img src="images/WelcomeTitle.png" alt="Welcome to DeaNoy's Game">
+    </div>
+    <br/>
+</head>
+<body>
+<div class="container">
+    <div id="getPlayerName">
+        <h2>Please enter a unique user name:</h2>
+        <form id="loginInput" class="playerName" method="GET" action="lobby">
+            <input id="userNameText" type="text" name="username"/>
+            <input id="userType" type="radio" name="usertype"/>
+            <input type="submit" class="btn" value="Login"/>
+            <h2>User name already taken.</h2>
+        </form>
+    </div>
+</div>
+</body>
+</html>
